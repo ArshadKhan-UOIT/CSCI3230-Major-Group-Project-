@@ -51,6 +51,7 @@ Factors that will be taken into consideration include non-functional requirement
 | Code quality, design, architecture |	5.0 |
 | User interface, usability |	5.0 |
 | Work done | 	5.0 |
+
 Note:  This project will be treated as a final exam.  Accordingly, the instructor will mark the subjective portion of the project quite strictly.  It is expected each student spends at least 40 hours on this project.  Groups with more members, therefore, should have completed proportionally more work.
 
 ### Independent Study (5 Marks):
