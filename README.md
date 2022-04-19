@@ -6,7 +6,7 @@ Before you submit your project, add the following table to in the README.md file
 | Group Member Name | GitHub Username (GitHub URL)|
 | :------------------------:|:--------------------------------------:|
 | Arshad Khan | [ArshadKhan-UOIT](https://github.com/ArshadKhan-UOIT) |
-| FirstName LastName | [Username](https://github.com/) |
+| Ryan Christopher | [RyanCh29](https://github.com/RyanCh29) |
 | FirstName LastName | [Username](https://github.com/) |
 | FirstName LastName | [Username](https://github.com/) |
 | FirstName LastName | [Username](https://github.com/) |
