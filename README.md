@@ -7,7 +7,7 @@ Before you submit your project, add the following table to in the README.md file
 | :------------------------:|:--------------------------------------:|
 | Arshad Khan | [ArshadKhan-UOIT](https://github.com/ArshadKhan-UOIT) |
 | Ryan Christopher | [RyanCh29](https://github.com/RyanCh29) |
-| FirstName LastName | [Username](https://github.com/) |
+| Tashdiq Ahmed | [tashahmed](https://github.com/tashahmed) |
 | FirstName LastName | [Username](https://github.com/) |
 | FirstName LastName | [Username](https://github.com/) |
 | FirstName LastName | [Username](https://github.com/) |
