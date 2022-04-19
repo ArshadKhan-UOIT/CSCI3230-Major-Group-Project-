@@ -1,5 +1,5 @@
-https://fakestoreapi.com/docs for the store products 
-https://jsonplaceholder.typicode.com/users for users, at first 
+- https://fakestoreapi.com/docs for the store products 
+- https://jsonplaceholder.typicode.com/users for users, at first 
 then maybe develop mongodb for real users 
 
 To Do:
@@ -17,7 +17,7 @@ To Do:
 finalizing 
 - possibly connnect sign in with google and third party 
 accounts with firebase  
-- potentially 
+- potentially convert everything to a front end framework like vue 
 
 possible
 - possible admin page to add products
