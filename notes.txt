@@ -1,0 +1,24 @@
+https://fakestoreapi.com/docs for the store products 
+https://jsonplaceholder.typicode.com/users for users, at first 
+then maybe develop mongodb for real users 
+
+To Do:
+- sign in page
+- sign up page
+- cart icon updates with number in corner when stuff are added to cart 
+- when hover over item, it gets bigger and add cart button apprears 
+- account page - settings, security etc
+- product image slider 
+- product history graph - d3
+- reviews 
+- contact page
+- returns and refunds page 
+
+finalizing 
+- possibly connnect sign in with google and third party 
+accounts with firebase  
+- potentially  
+
+possible
+- possible admin page to add producs 
+
