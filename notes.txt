@@ -17,8 +17,8 @@ To Do:
 finalizing 
 - possibly connnect sign in with google and third party 
 accounts with firebase  
-- potentially  
+- potentially 
 
 possible
-- possible admin page to add producs 
+- possible admin page to add products
 
