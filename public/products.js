@@ -4,7 +4,8 @@ function getAllProducts() {
 
 function getProductsByID(query) {
   console.log("by id");
-  let productList = productAPICall("id", query);
+  let productList = [];
+  productList.push(productAPICall("id", query));
 
   console.log(productList);
   return productList;
@@ -47,7 +48,7 @@ function getProductsByRating(query) {
 
   let productList = [];
   // sort by query
-  // query is {1,2,3,4,5} stars
+  // query is {0,1,2,3,4,5} stars
   productAPICall("all", query).forEach((item, i) => {
     if (Math.floor(item["rating"]['rate']) == query) {
       productList.push(item);
@@ -76,10 +77,61 @@ function productAPICall(type, query) {
 
 $(document).ready(function() {
   console.log("start");
-  // getAllProducts();
-  // getProductsByID("1");
-  // getProductsByTitle("Mens");
-  // getProductsByCategory("jewelery");
-  // getProductsByPrice([10,100]);
-  // getProductsByRating("2");
+
+  let list = $("#all");
+  let products = [];
+
+  products = getAllProducts();
+  products.forEach((item, i) => {
+    let option = $("<option>");
+    option.text(item["title"]);
+
+    list.append(option);
+  });
+
+  list = $("#byID");
+  products = getProductsByID("2");
+  products.forEach((item, i) => {
+    let option = $("<option>");
+    option.text(item["title"]);
+
+    list.append(option);
+  });
+
+  list = $("#byTitle");
+  products = getProductsByTitle("Mens");
+  products.forEach((item, i) => {
+    let option = $("<option>");
+    option.text(item["title"]);
+
+    list.append(option);
+  });
+
+  list = $("#byCategory");
+  products = getProductsByCategory("jewelery");
+  products.forEach((item, i) => {
+    let option = $("<option>");
+    option.text(item["title"]);
+
+    list.append(option);
+  });
+
+  list = $("#byPrice");
+  products = getProductsByPrice([10,100]);
+  products.forEach((item, i) => {
+    let option = $("<option>");
+    option.text(item["title"]);
+
+    list.append(option);
+  });
+
+  list = $("#byRating");
+  products = getProductsByRating("2");
+  products.forEach((item, i) => {
+    let option = $("<option>");
+    option.text(item["title"]);
+
+    list.append(option);
+  });
+
 });
