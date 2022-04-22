@@ -1,0 +1,22 @@
+{
+  "name": "csci3230-major-group-project-",
+  "version": "1.0.0",
+  "description": "Before you submit your project, add the following table to in the README.md file to include everyone's full name and GitHub usernames that contains your assignments:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArshadKhan-UOIT/CSCI3230-Major-Group-Project-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArshadKhan-UOIT/CSCI3230-Major-Group-Project-/issues"
+  },
+  "homepage": "https://github.com/ArshadKhan-UOIT/CSCI3230-Major-Group-Project-#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
