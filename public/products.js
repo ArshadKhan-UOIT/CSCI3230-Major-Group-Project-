@@ -70,7 +70,7 @@ function productAPICall(type, query) {
     success: function(data) {
       productsList = data;
     },
-    failure: function(data) {/*console.log("failure");*/}
+    failure: function(data) {console.log("failure");}
   });
   return productsList;
 }
