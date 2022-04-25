@@ -66,6 +66,7 @@ $(document).ready(function() {
 
         var h6 = document.createElement('h6');
         h6.textContent = products[i].title;
+        h6.setAttribute('class','product-text');
         card.appendChild(h6);
 
         var rates = document.createElement('div');
@@ -94,10 +95,13 @@ $(document).ready(function() {
 
         var product_list_price = document.createElement('div');
         product_list_price.setAttribute('class','product-list-price');
+
+        br = document.createElement('br');
+        product_list_price.appendChild(br);
         
         var former_price = document.createElement('span');
         former_price.setAttribute('class','former-price');
-        var f_price = products[i].price + 5.0;
+        var f_price = (products[i].price * 1.2);
         f_price = f_price.toFixed(2);
         former_price.textContent = "$" + f_price;
         product_list_price.appendChild(former_price);
