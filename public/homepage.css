@@ -1,0 +1,71 @@
+.fa {
+    font-size: 12px;
+}
+
+.checked {
+    color: orange;
+}
+
+.unchecked {
+    color: orange;
+}
+
+.former-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #a6a6a6;
+    float: left;
+}
+
+.current-price {
+    float: right;
+    color: #d71920;
+    font-size: 18px;
+}
+
+.rates {
+    height: 14px;
+    font-size: 10px;
+    line-height: 16px;
+    vertical-align: top;
+    color: #4a4a4a;
+    float: left;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 375px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 10px;
+}
+
+/* ul {
+    columns: 3;
+} */
+
+ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imgDiv {
+    width: 200px;
+    height: 200px;
+    /* border: solid; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgSrc {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
