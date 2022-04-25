@@ -49,6 +49,10 @@ $(document).ready(function() {
         card = document.createElement('div');
         card.setAttribute('class','card');
 
+        var a = document.createElement('a');
+        a.title = '' + products[i].title;
+        a.href = '' + "homepage/" + products[i].id;
+
         let imgDiv = document.createElement('div');
         imgDiv.setAttribute('class','imgDiv');
         var img = new Image(); 
@@ -62,12 +66,12 @@ $(document).ready(function() {
         //     minHeight,
         // });
         imgDiv.appendChild(img);
-        card.appendChild(imgDiv);
+        a.appendChild(imgDiv);
 
         var h6 = document.createElement('h6');
         h6.textContent = products[i].title;
         h6.setAttribute('class','product-text');
-        card.appendChild(h6);
+        a.appendChild(h6);
 
         var rates = document.createElement('div');
         rates.setAttribute('class','rates');
@@ -88,17 +92,17 @@ $(document).ready(function() {
         var reviews = document.createElement('span');
         reviews.textContent = " " + products[i].rating.rate + " " + products[i].rating.count + " Reviews";
         rates.appendChild(reviews);
-        card.appendChild(rates);
+        a.appendChild(rates);
 
         let br = document.createElement('br');
-        card.appendChild(br);
+        a.appendChild(br);
 
         var product_list_price = document.createElement('div');
         product_list_price.setAttribute('class','product-list-price');
 
         br = document.createElement('br');
         product_list_price.appendChild(br);
-        
+
         var former_price = document.createElement('span');
         former_price.setAttribute('class','former-price');
         var f_price = (products[i].price * 1.2);
@@ -106,7 +110,7 @@ $(document).ready(function() {
         former_price.textContent = "$" + f_price;
         product_list_price.appendChild(former_price);
 
-        card.appendChild(product_list_price);
+        a.appendChild(product_list_price);
 
         var current_price = document.createElement('span');
         current_price.setAttribute('class','current-price');
@@ -115,9 +119,9 @@ $(document).ready(function() {
         current_price.textContent = "$" + c_price;
         product_list_price.appendChild(current_price);
 
-        card.appendChild(product_list_price);
+        a.appendChild(product_list_price);
 
-
+        card.appendChild(a);
         li.appendChild(card)
         ul.appendChild(li);
 
