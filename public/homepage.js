@@ -45,13 +45,17 @@ $(document).ready(function() {
     for (let i=0; i<products.length; i++) {
         li = document.createElement('li');
         li.setAttribute('id','' + products[i].id);
+        li.setAttribute('class','product-list-item');
         
         card = document.createElement('div');
         card.setAttribute('class','card');
+        card.setAttribute('id','' + products[i].id);
 
         var a = document.createElement('a');
         a.title = '' + products[i].title;
         a.href = '' + "homepage/" + products[i].id;
+        a.setAttribute('id','' + products[i].id);
+        a.setAttribute('class','product-link');
 
         let imgDiv = document.createElement('div');
         imgDiv.setAttribute('class','imgDiv');
@@ -132,7 +136,12 @@ $(document).ready(function() {
 
     document.body.appendChild(brand_product_list);
 
-
+    $(".product-list-item").hover(function(event) {
+        console.log("Mouse Hovering");
+        let productID = event.target.id
+        console.log(productID);
+        
+    });
 
     // });
 
