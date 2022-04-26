@@ -9,8 +9,11 @@ app.get("/", function(request, response){
 
 app.use(express.static('public'));
 
+app.get("/item", function(request, response){
+  response.sendFile( __dirname +'/public/productPage.html');
+});
+
 app.get("/products", function(request, response){
-  console.log("https://fakestoreapi.com/products");
 
   let url = "";
   if (request.query.type == "all") {
@@ -23,7 +26,7 @@ app.get("/products", function(request, response){
     url = "/" + request.query.type + "/" + request.query.query ;
   }
 
-  console.log("calling: " + url);
+  console.log("calling: https://fakestoreapi.com/products" + url);
 
   axios.get("https://fakestoreapi.com/products" + url)
     .then(res => response.send(res.data));

@@ -49,7 +49,7 @@ $(document).ready(function() {
 
         var a = document.createElement('a');
         a.title = '' + products[i].title;
-        a.href = '' + "homepage/" + products[i].id;
+        a.href = '' + "item?id=" + products[i].id;
         a.setAttribute('id','' + products[i].id);
         a.setAttribute('class','product-link');
 

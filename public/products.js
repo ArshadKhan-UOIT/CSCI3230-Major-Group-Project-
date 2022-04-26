@@ -50,7 +50,7 @@ function getProductsByRating(query) {
   // sort by query
   // query is {0,1,2,3,4,5} stars
   productAPICall("all", query).forEach((item, i) => {
-    if (Math.floor(item["rating"]['rate']) == query) {
+    if (Math.floor(item["rating"]["rate"]) == query) {
       productList.push(item);
     }
   });
