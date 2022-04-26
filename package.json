@@ -19,6 +19,9 @@
   "dependencies": {
     "axios": "^0.26.1",
     "cors": "^2.8.5",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "express-service": "^1.7.0",
+    "firebase": "^9.6.11",
+    "firebase-admin": "^10.1.0"
   }
 }
