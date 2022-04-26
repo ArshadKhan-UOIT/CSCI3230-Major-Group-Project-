@@ -2,19 +2,12 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 
-app.use(express.static('public'));
-
+// set the homepage to the default page
 app.get("/", function(request, response){
-  response.sendFile( __dirname +'/public/index.html');
-});
-
-// app.get("/", function(request, response){
-//   response.sendFile( __dirname +'/public/homepage.html');
-// });
-
-app.get("/homepage", function(request, response){
   response.sendFile( __dirname +'/public/homepage.html');
 });
+
+app.use(express.static('public'));
 
 app.get("/products", function(request, response){
   console.log("https://fakestoreapi.com/products");

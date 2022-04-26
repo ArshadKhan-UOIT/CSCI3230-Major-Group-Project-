@@ -10,10 +10,6 @@ function roundToHalf(value) {
     }
 }
 
-function getAllProducts() {
-    return productAPICall("all", "");
-}
-
 $(document).ready(function() {
     let brand_product_list, ul, li, card;
 
@@ -22,15 +18,15 @@ $(document).ready(function() {
     console.log(products);
     console.log(products[0]);
     console.log(products[0].id);
-    
+
 
     // fetch('https://fakestoreapi.com/products')
     // .then(res => res.json())
     // .then(json => {
-        
+
     brand_product_list = document.createElement('div');
     brand_product_list.setAttribute('class','brand-product-list');
-    
+
     ul = document.createElement('ul');
 
     // console.log(json);
@@ -46,7 +42,7 @@ $(document).ready(function() {
         li = document.createElement('li');
         li.setAttribute('id','' + products[i].id);
         li.setAttribute('class','product-list-item');
-        
+
         card = document.createElement('div');
         card.setAttribute('class','card');
         card.setAttribute('id','' + products[i].id);
@@ -59,7 +55,7 @@ $(document).ready(function() {
 
         let imgDiv = document.createElement('div');
         imgDiv.setAttribute('class','imgDiv');
-        var img = new Image(); 
+        var img = new Image();
         img.src = products[i].image;
         img.setAttribute('class','imgSrc');
         // let maxWidth = '260px', minWidth = '260px', maxHeight = '260px', minHeight = '260px';
@@ -84,7 +80,7 @@ $(document).ready(function() {
             let star = document.createElement('span');
             if (dec >= 1.0) {
                 star.setAttribute('class','fa fa-star checked');
-            } 
+            }
             else if (dec <= 1.0 && dec >= 0.5) {
                 star.setAttribute('class','fa fa-star-half-o checked');
             }   else {
@@ -140,7 +136,7 @@ $(document).ready(function() {
         console.log("Mouse Hovering");
         let productID = event.target.id
         console.log(productID);
-        
+
     });
 
     // });
