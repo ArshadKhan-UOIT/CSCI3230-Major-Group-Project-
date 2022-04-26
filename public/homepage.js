@@ -75,6 +75,7 @@ $(document).ready(function() {
         var h6 = document.createElement('h6');
         h6.textContent = products[i].title;
         h6.setAttribute('class','product-text');
+        h6.setAttribute('id','' + products[i].id);
         a.appendChild(h6);
 
         var rates = document.createElement('div');
@@ -125,7 +126,20 @@ $(document).ready(function() {
 
         a.appendChild(product_list_price);
 
+        /*
+        <button name="button" type="submit" class="pure-button add-to-cart-btn" data-disable-with="Waiting" onclick="send_add_cart_to_ga_event([{&quot;id&quot;:369207,&quot;name&quot;:&quot;Adjustable Mesh Luxurious Office Chair with Footrest - Black - Moustache®&quot;,&quot;category&quot;:&quot;Ergonomic Chairs&quot;,&quot;brand&quot;:&quot;Moustache®&quot;,&quot;variant&quot;:&quot;MOFC-HLC-1168F-1&quot;,&quot;price&quot;:&quot;189.99&quot;,&quot;quantity&quot;:1}])">Add To Cart</button>
+        */
+        let btn = document.createElement("button");
+        btn.setAttribute('id', '' + products[i].id);
+        btn.setAttribute('class', 'add-to-cart-button');
+        btn.innerHTML = "Add To Cart";
+        btn.type = "submit";
+        btn.name = "formBtn";
+
         card.appendChild(a);
+        
+        card.appendChild(btn);
+
         li.appendChild(card)
         ul.appendChild(li);
 
@@ -136,12 +150,32 @@ $(document).ready(function() {
 
     document.body.appendChild(brand_product_list);
 
-    $(".product-list-item").hover(function(event) {
-        console.log("Mouse Hovering");
-        let productID = event.target.id
+    $(".add-to-cart-button").click(function(event) {
+        console.log("Add cart button clicked!");
+        let productID = event.target.id;
         console.log(productID);
-        
     });
+
+    // $(".product-list-item").hover(function(event) {
+    //     console.log("Mouse Hovering");
+    //     let productID = event.target.id
+    //     console.log(productID);
+    //     $(this).css({
+    //         'color':'blue',
+    //         'background-color':'blue',
+
+    //     });
+    //     let elementID = '#' + productID;
+    //     $("h6 #" + productID).addClass("product-text-hov");
+    //     $('' + '#' + productID).removeClass("product-text");
+    //     // $(".product-text").css({
+    //     //     'overflow':'None',
+    //     //     'white-space': 'Normal',
+    //     //     'display': 'block',
+    //     //     'text-overflow': 'None',
+    //     //     'width': '100%',
+    //     // });
+    // });
 
     // });
 
