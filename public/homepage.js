@@ -28,7 +28,7 @@ $(document).ready(function() {
     brand_product_list.setAttribute('class','brand-product-list');
 
     ul = document.createElement('ul');
-
+    ul.setAttribute('class','brand-product-ul');
     // console.log(json);
     // console.log(json[0]);
     // console.log(json.length);

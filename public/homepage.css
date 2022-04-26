@@ -34,7 +34,7 @@
 
 .card {
     width: 300px;
-    height: 350px;
+    height: 375px;
     margin: auto;
     text-align: center;
     font-family: arial;
@@ -49,12 +49,12 @@
     columns: 3;
 } */
 
-ul {
+.brand-product-ul {
     margin: 0 auto;
     text-align: center;
 }
 
-li {
+.product-list-item {
     display: inline-block;
     vertical-align: top;
     margin: 2px;
@@ -121,4 +121,15 @@ li {
 .add-to-cart-button:hover {
     background-color: #c7a600;
     border-color: #c7a600;
+}
+/* 
+.image-slider {
+    width: 50px;
+    height: 400px;
+} */
+
+
+.product-image-slider {
+    margin: 100px;
+    padding: 100px;
 }
