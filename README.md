@@ -13,6 +13,10 @@ Before you submit your project, add the following table to in the README.md file
 ##### Sources:
 1. https://www.123ink.ca/
 
+##### Login in credentials
+1. Username: `dev`
+1. Password: `dev1234`
+
 Note: You can delete the unused rows from the table.
 ### Overview
 This group project is designed for you to demonstrate the skills that you have learned in this course.  The final project that you submit in the last week of classes will be a completed web application.  Non-functional requirements, especially those associated with production-readiness, will be considered extremely important when marking this project.  You are expected to work in a group of 3-5 when completing this project.  Students will be prohibited from working alone on the project, as this eliminates one of the learning objectives of this assessment.
