@@ -91,3 +91,4 @@ When the due date approaches, you will commit and push your code to your GitHub 
 Note 1:  This `README.md` file should contain any necessary instructions for getting started (e.g. admin accounts, how to import the database), along with the names and GitHub usernames of the group members._
 
 Note 2:  If any files or changes are missing from the repository at the time of submission, that work will not be counted toward your project mark.  Take care to ensure you follow a regular commit policy (at least once for each day you’ve worked on the project).  Not only will this allow the instructor to follow your progress, but it will also ensure that you do not lose any work and will eliminate most merge-related issues when working on the project separately.  It is recommended that you verify that the correct code is on GitHub by doing a fresh clone of the repository and testing it out.
+
