@@ -93,4 +93,4 @@ Note 1:  This `README.md` file should contain any necessary instructions for get
 Note 2:  If any files or changes are missing from the repository at the time of submission, that work will not be counted toward your project mark.  Take care to ensure you follow a regular commit policy (at least once for each day you’ve worked on the project).  Not only will this allow the instructor to follow your progress, but it will also ensure that you do not lose any work and will eliminate most merge-related issues when working on the project separately.  It is recommended that you verify that the correct code is on GitHub by doing a fresh clone of the repository and testing it out.
 
 ### Submission of independent module
-The link to the independent study module: [a link](https://github.com/ArshadKhan-UOIT/CSCI3230-Major-Group-Project-/blob/main/independent_study_module.pdf)
+The link to the independent study module: [link](https://github.com/ArshadKhan-UOIT/CSCI3230-Major-Group-Project-/blob/main/independent_study_module.pdf)
