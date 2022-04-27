@@ -1,45 +1,48 @@
 .login_form {
-    background-color: #ccccff;
-   padding: 8%;
-   width:16%;
-   margin: auto;
-   border-radius: 10px;
- border: 10px solid rgb(7, 7, 194) ;
+  background-color: #ccccff;
+  padding: 8%;
+  width:16%;
+  margin: auto;
+  border-radius: 10px;
+  border: 10px solid rgb(7, 7, 194) ;
     
-  }
-  #register_form {
-    background-color: #ccccff;
-   padding: 8%;
-   width:16%;
-   margin: auto;
-   border-radius: 10px;
- border: 10px solid rgb(7, 7, 194) ;
-    
-  }
- 
-  input[type=text] {
-    position: relative;
-    width: 100%;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  #btn1{
-    background-color: #0707c2    ;
-    color: white;
-    padding: 12px ;
-    margin: 15px;
-    width: 100%;
-    border: none;
-  }
-  .register{
-      display: block;
-  }
+}
   
-  label{
-      font-size: large;
-  }
+#register_form {
+  background-color: #ccccff;
+  padding: 8%;
+  width:16%;
+  margin: auto;
+  border-radius: 10px;
+  border: 10px solid rgb(7, 7, 194) ;
+    
+}
+ 
+input[type=text] {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#btn1 {
+  background-color: #0707c2    ;
+  color: white;
+  padding: 12px ;
+  margin: 15px;
+  width: 100%;
+  border: none;
+}
+
+.register {
+    display: block;
+}
+
+label {
+    font-size: large;
+}
   
  
    

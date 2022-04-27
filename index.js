@@ -27,7 +27,7 @@ app.get("/", function(request, response){
   response.sendFile( __dirname +'/public/login.html');
 });
 
-
+// leave this here for now
 app.get("/homepage", function(request, response){
   response.sendFile( __dirname +'/public/homepage.html');
 });
@@ -69,36 +69,40 @@ app.get('/login', function(request,response){
       response.redirect( __dirname +'/public/login.html');
     }
   });
-  });
-  app.get('/register', function(request,response){
-  
-      response.sendFile( __dirname +'/public/register.html');
-  
-  });
-  
-  app.get('/registration', function(request,response){
+});
+ 
+app.get('/register', function(request,response){
 
-    let flag = 0
-      var username = request.query.usrname;
-      var pass = request.query.pass;
-      db = getDatabase();
-      refer = db.ref('users');
-   
-   
-     const new_user = refer.ref.push('users');
-   new_user.set({
-     UserName: username,
-     Password:pass
-   });
+  response.sendFile( __dirname +'/public/register.html');
+
+});
+  
+app.get('/registration', function(request,response){
+
+  let flag = 0
+  var username = request.query.usrname;
+  var pass = request.query.pass;
+  db = getDatabase();
+  refer = db.ref('users');
+
+
+  const new_user = refer.ref.push('users');
+  new_user.set({
+    UserName: username,
+    Password:pass
+  });
   flag =1
   if(flag = 1)
   {
     response.sendFile( __dirname +'/public/register.html');
 
   }
-  
-  });
-  
+
+});
+
+app.get("/item", function(request, response){
+  response.sendFile( __dirname +'/public/productPage.html');
+});
   
 
 app.get("/products", function(request, response){
@@ -121,11 +125,12 @@ app.get("/products", function(request, response){
     .then(res => response.send(res.data));
 });
 
-app.get("/logout", (req, res) => {
- 
+app.get("/logout", (req, res) => { 
   res.redirect("/");
 })
+
 app.set('port',process.env.PORT ||4500);
+
 app.listen(app.get('port'),function(){
   console.log(`Nodejs Server is up and listing to port ${app.get('port')}`);
 });
