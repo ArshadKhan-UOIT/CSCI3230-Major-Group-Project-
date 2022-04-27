@@ -44,7 +44,33 @@
       </li>  
     </ul>
   </div>
-  <label for="category">Choose a category:</label>
+  <div id="carouselExampleIndicators" class="carousel slide product-image-slider" data-bs-ride="carousel">
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner"> -->
+      <div class="carousel-item active">
+        <img src="https://d3e54emdgoy1fq.cloudfront.net/uploads/promotion_picture/picture/23913/4266b-15-Off-Compatible-Ink-Toner-Cartridges.png" class="d-block w-100 image-slider" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://d3e54emdgoy1fq.cloudfront.net/uploads/promotion_picture/picture/24494/525b7-Moustache-Anniversary-Sale.jpg" class="d-block w-100 image-slider" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://d3e54emdgoy1fq.cloudfront.net/uploads/promotion_picture/picture/14921/7243b-Ink-Toner-Expert.png" class="d-block w-100 image-slider"  alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <label for="category" class="sorting-products">Choose a category:</label>
     <select name="category" id="category">
       <option value="electronics">electronics</option>
       <option value="jewelery">jewelery</option>
@@ -66,38 +92,16 @@
       <option value="five_star">5</option>
     </select>
   <input type="submit" value="Submit" id = "sub">
-  <div id="carouselExampleIndicators" class="carousel slide product-image-slider" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://d3e54emdgoy1fq.cloudfront.net/uploads/promotion_picture/picture/23913/4266b-15-Off-Compatible-Ink-Toner-Cartridges.png" class="d-block w-100 image-slider" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://d3e54emdgoy1fq.cloudfront.net/uploads/promotion_picture/picture/24494/525b7-Moustache-Anniversary-Sale.jpg" class="d-block w-100 image-slider" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://d3e54emdgoy1fq.cloudfront.net/uploads/promotion_picture/picture/14921/7243b-Ink-Toner-Expert.png" class="d-block w-100 image-slider"  alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  <br>
   <div id="all-product-items-div"></div> 
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <p id="modal-cart-message"></p>
-
+      <div class="continue-buttons">
+        <a class="btn btn-secondary continue-homepage" href="homepage.html">Continue Shopping</a>
+        <a class="btn btn-primary continue-cart" href="checkout.html">Proceed To Chechout</a>
+      </div>
     </div>
   </div>
 </body>

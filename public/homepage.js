@@ -230,8 +230,6 @@ $(document).ready(function() {
 
   var modal = document.getElementById("myModal");
   
-  var span = document.getElementsByClassName("close")[0];
-  
   let cartItemsList = [];
   $(".add-to-cart-button").click(function(event) {
     console.log("Add cart button clicked!");
@@ -240,17 +238,19 @@ $(document).ready(function() {
     cartItemsList.push(productID);
     modal.style.display = "block";
     let modal_cart_message = document.getElementById("modal-cart-message");
-    modal_cart_message.textContent = "";
+    modal_cart_message.textContent = "Cart Items: " + cartItemsList.length + " Item(s)";
   });
 
   $(".close").click(function() {
     modal.style.display = "none";
   });
-  
+
   $(document).click(function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   });
+
+  // $("#shopping-cart-content").append("<p>Hello World</p>");
 
 });
