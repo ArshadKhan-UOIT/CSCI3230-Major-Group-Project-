@@ -16,91 +16,55 @@
     <script type="text/javascript" src="productImageSlider.js"></script>
     <script type="text/javascript" src="homepage.js"></script>
     <script type="text/javascript" src="products.js"></script>
+    <!-- <script type="modeule" src="cart.js"></script> -->
 </head>
-<body>
-
-
-
-  
-  
-      
+<body>  
   <nav class="navbar navbar-expand-md">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-
       <ul class="navbar-nav">
-         
         <li class="nav-item">
           <a class="nav-link" href="homepage.html">Homepage</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="checkout.html">Checkout</a>
         </li>
-       
-      
-      </div>
-  
-    
-
-     
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/logout">Logout</a>
-            </li>
-           
-        </ul>
+    </div>     
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+        </li>  
+      </ul>
     </div>
-  
-    </nav>
-  
-    
-
-     
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/logout">Logout</a>
-            </li>
-           
-        </ul>
-    </div>
-  
-
-
-
-  
+  </nav>   
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>  
+    </ul>
+  </div>
   <label for="category">Choose a category:</label>
-
     <select name="category" id="category">
-
       <option value="electronics">electronics</option>
       <option value="jewelery">jewelery</option>
       <option value="men's clothing">men's clothing</option>
       <option value="women's clothing">women's clothing</option>
-
     </select>
-
     <label for="price">Choose a Price range:</label>
-
     <select name="price" id="price">
       <option value="hundred">0-100</option>
       <option value="two_hundreds">100.1-200</option>
       <option value="more_than">200+</option>
-
     </select>
-
     <label for="rating">Choose a rating:</label>
-
     <select name="rating" id="rating">
       <option value="one_star">1</option>
       <option value="two_star">2</option>
       <option value="three_star">3</option>
       <option value="four_star">4</option>
       <option value="five_star">5</option>
-
     </select>
-
-
   <input type="submit" value="Submit" id = "sub">
   <div id="carouselExampleIndicators" class="carousel slide product-image-slider" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -127,8 +91,14 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-</div>
+  </div>
+  <div id="all-product-items-div"></div> 
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-cart-message"></p>
 
-    
+    </div>
+  </div>
 </body>
 </html>
