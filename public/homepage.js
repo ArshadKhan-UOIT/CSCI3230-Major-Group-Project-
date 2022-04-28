@@ -33,12 +33,12 @@ function getProductsByCategory(query,price_fix,rating) {
 
 
   result = productAPICall("category", query,rating)
-  
+
   result.forEach((item) => {
     if (item["price"] <=Number(price_fix)&&item["rate"]==Number(rating)) {
       productList.push(item)
     }
-    
+
   });
 
   return productList;
@@ -47,7 +47,7 @@ function getProductsByCategory(query,price_fix,rating) {
 /*
   function getProductsByRating(query) {
     console.log("by rating");
-  
+
     let productList = [];
     // sort by query
     // query is {0,1,2,3,4,5} stars
@@ -66,7 +66,7 @@ function getProductItems(product_filter) {
 
   let products = [];
   products = product_filter;
-  
+
   console.log(products);
   console.log(products[0]);
   console.log(products[0].id);
@@ -81,7 +81,7 @@ function getProductItems(product_filter) {
 
   ul = document.createElement('ul');
   ul.setAttribute('class','brand-product-ul');
-  
+
   for (let i=0; i<products.length; i++) {
     li = document.createElement('li');
     li.setAttribute('id','' + products[i].id);
@@ -102,7 +102,7 @@ function getProductItems(product_filter) {
     var img = new Image();
     img.src = products[i].image;
     img.setAttribute('class','imgSrc');
-    
+
     // let maxWidth = '260px', minWidth = '260px', maxHeight = '260px', minHeight = '260px';
     // Object.assign(img.style, {
     //     maxWidth,
@@ -110,7 +110,7 @@ function getProductItems(product_filter) {
     //     maxHeight,
     //     minHeight,
     // });
-    
+
     imgDiv.appendChild(img);
     a.appendChild(imgDiv);
 
@@ -189,7 +189,7 @@ function getProductItems(product_filter) {
   // document.body.appendChild(brand_product_list);
 
 }
-  
+
 $(document).ready(function() {
   let products = [];
   products = getAllProducts();
@@ -222,14 +222,14 @@ $(document).ready(function() {
     var stri = `${val}`;
 
     let products = []
-    
+
     products = getProductsByCategory(stri,price_fix,review);
     getProductItems(products);
-    
+
   });
 
   var modal = document.getElementById("myModal");
-  
+
   let cartItemsList = [];
   $(".add-to-cart-button").click(function(event) {
     console.log("Add cart button clicked!");
