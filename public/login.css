@@ -26,6 +26,14 @@ input[type=text] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+input[type=password] {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
 #btn1 {
   background-color: #0707c2    ;
