@@ -18,7 +18,7 @@
     <script type="text/javascript" src="products.js"></script>
     <!-- <script type="modeule" src="cart.js"></script> -->
 </head>
-<body>  
+<body>
   <nav class="navbar navbar-expand-md">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 nav-options-pages">
       <ul class="navbar-nav">
@@ -28,20 +28,20 @@
         <li class="nav-item">
           <a class="nav-link" href="checkout.html">Checkout</a>
         </li>
-    </div>     
+    </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 logout-nav-item">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link" href="/logout">Logout</a>
-        </li>  
+        </li>
       </ul>
     </div>
-  </nav>   
+  </nav>
   <!-- <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="/logout">Logout</a>
-      </li>  
+      </li>
     </ul>
   </div> -->
   <div id="carouselExampleIndicators" class="carousel slide product-image-slider" data-bs-ride="carousel">
@@ -72,6 +72,7 @@
   </div>
   <label for="category" class="sorting-products">Choose a category:</label>
     <select name="category" id="category">
+      <option value="all">all</option>
       <option value="electronics">electronics</option>
       <option value="jewelery">jewelery</option>
       <option value="men's clothing">men's clothing</option>
@@ -79,12 +80,14 @@
     </select>
     <label for="price">Choose a Price range:</label>
     <select name="price" id="price">
+      <option value="all">all</option>
       <option value="hundred">0-100</option>
       <option value="two_hundreds">100.1-200</option>
       <option value="more_than">200+</option>
     </select>
     <label for="rating">Choose a rating:</label>
     <select name="rating" id="rating">
+      <option value="all">all</option>
       <option value="one_star">1</option>
       <option value="two_star">2</option>
       <option value="three_star">3</option>
@@ -93,7 +96,7 @@
     </select>
   <input type="submit" value="Submit" id = "sub">
   <br>
-  <div id="all-product-items-div"></div> 
+  <div id="all-product-items-div"></div>
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>

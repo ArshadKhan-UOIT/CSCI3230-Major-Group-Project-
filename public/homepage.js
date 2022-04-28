@@ -208,21 +208,24 @@ $(document).ready(function() {
     //let price_estimate = String(price);
 
     var price_fix = 0;
-    if (price_estimate == 'hundred')
-    {
+    if (price_estimate == 'hundred') {
       price_fix = 100;
-    } else if (price_estimate == 'two_hundreds'){
+    }
+    else if (price_estimate == 'two_hundreds') {
       price_fix = 200;
 
-    } else {
+    }
+    else if (price_estimate == 'more_than') {
       price_fix = 200.1
+    }
+    else {
+      price_fix = 0;
     }
 
     var val = String(txt);
     var stri = `${val}`;
 
     let products = []
-
     products = getProductsByCategory(stri,price_fix,review);
     getProductItems(products);
 
