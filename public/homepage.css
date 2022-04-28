@@ -1,4 +1,3 @@
-
 .navbar{
     min-height: 80px;
     background-color: darkblue;
@@ -58,7 +57,14 @@
     font-family: arial;
     padding: 10px;
 }
+#first_card{
+    background-color: white;
+    width: 1000px;
+    height: 200px;
+    margin-top: 10px;
+   
 
+}
 .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -90,7 +96,20 @@
     height: 100%;
     object-fit: contain;
 }
+.imgDiv_check {
+    width: 200px;
+    height: 200px;
+    /* border: solid; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
 
+.imgsrc_Check {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .product-text {
     overflow: hidden;
     white-space: nowrap;
@@ -221,3 +240,4 @@
 .nav-options-pages {
     margin-left: 15px;
 }
+
