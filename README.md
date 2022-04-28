@@ -13,9 +13,17 @@ Before you submit your project, add the following table to in the README.md file
 ##### Sources:
 1. https://www.123ink.ca/
 
-##### Login in credentials
+##### Login in credentials:
 1. Username: `dev`
 1. Password: `dev1234`
+
+##### Instructions to run:
+1. `git clone git@github.com:ArshadKhan-UOIT/CSCI3230-Major-Group-Project-.git`
+1. `cd CSCI3230-Major-Group-Project-/`
+1. `npm i`
+1. `nodemon`
+1. open browser at `localhost:4500/`
+1. login in with credentials above    
 
 Note: You can delete the unused rows from the table.
 ### Overview
