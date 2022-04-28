@@ -65,8 +65,7 @@ function createSimilarProducts(products) {
     card.attr("id","" + products[i]["id"]);
 
     let a = $("<a>");
-    a.title = "" + products[i]["title"];
-    a.href = "" + "item?id=" + products[i]["id"];
+    a.attr("href" , "item?id=" + products[i]["id"])
     a.attr("id","" + products[i]["id"]);
     a.attr("class","product-link");
 
@@ -135,7 +134,7 @@ function createSimilarProducts(products) {
 
     let btn_a = $("<a>");
     btn_a.title = "" + products[i]["title"];
-    // btn_a.href = "" + "cart?id=" + products[i]["id"];
+    btn_a.href = "" + "cart?id=" + products[i]["id"];
     btn_a.attr("id","" + products[i]["id"]);
     btn_a.attr("class","add-to-cart-button btn btn-primary");
     btn_a.text("Add To Cart");
