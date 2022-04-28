@@ -29,6 +29,10 @@ app.get("/homepage", function(request, response){
   response.sendFile( __dirname +'/public/homepage.html');
 });
 
+app.get("/checkout", function(request, response){
+  response.sendFile( __dirname +'/public/checkout.html');
+});
+
 app.get('/login', function(request,response){
   var user = request.query.usrname;
   var password = request.query.pass;
