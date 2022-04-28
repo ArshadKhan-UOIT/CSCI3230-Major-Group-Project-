@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="productPage.css"/>
@@ -43,7 +45,7 @@
       </ul>
     </div> -->
   <div class="content">
-    <div class="pic">
+    <div class="large-img">
       <img id="picture" src="" alt="">
 
     </div>
@@ -53,13 +55,31 @@
       <hr>
       <div class="price">
         <h4 id="price"></h4>
-        <button id="purchase" type="button" name="button" class="button purchase-button">Purchase</button>
-        <button id="cart" type="button" name="button" class="button cart-button">Add To Cart</button>
+        <a id="purchase" class="purchase-button btn btn-primary">Purchase</a>
+        <a id="cart" class="add-to-cart-button btn btn-primary">Add To Cart</a>
       </div>
       <hr>
       <div class="">
         <p>Description:</p>
         <p id="description"></p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <h4>Simlar Products</h4>
+    <div id="similar" class="">
+      <ul id="list">
+
+      </ul>
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-cart-message"></p>
+      <div class="continue-buttons">
+        <a class="btn btn-secondary continue-homepage" href="homepage.html">Continue Shopping</a>
+        <a class="btn btn-primary continue-cart" href="checkout.html">Proceed To Chechout</a>
       </div>
     </div>
   </div>
